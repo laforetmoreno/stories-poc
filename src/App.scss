@@ -227,6 +227,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #1a1a1a;
+  margin-bottom: 26px;
 }
 
 .feed-header {
@@ -247,4 +248,42 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
+}
+
+.slick-next {
+  display: none !important;
+}
+
+.image-container {
+  display: flex;
+  margin-left: -15px;
+  padding: 10px;
+
+  .left {
+    height: 254px;
+    width: 50%;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+  }
+
+  .rigth {
+    height: 254px;
+    width: 50%;
+
+    :first-child {
+      margin-bottom: 14px;
+    }
+
+    .rigth-image {
+      height: 120px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 16px;
+    }
+  }
 }

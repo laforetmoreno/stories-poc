@@ -1,0 +1,51 @@
+// .slick-slider {
+//   height: 100%;
+
+//   .slick-list {
+//     height: 100%;
+//     div {
+//       height: 100%;
+//       border-radius: rem(10px);
+//     }
+//   }
+
+//   .slick-slide {
+//     padding: 0 0 0 rem(15px);
+//     &:last-child {
+//       padding-right: rem(15px);
+//     }
+//   }
+
+//   .slick-dots {
+//     z-index: 2;
+//     position: absolute;
+//     bottom: rem(1.5px);
+
+//     li {
+//       margin: 0;
+
+//       button {
+//         &:before {
+//           font-family: 'slick';
+//           font-size: rem(6.31px);
+//           color: rgba(white, 0.5);
+//         }
+//       }
+
+//       &.slick-active {
+//         button {
+//           &:before {
+//             color: white;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// .one-slider {
+//   .slick-slider {
+//     .slick-slide {
+//       padding: 0 rem(15px) 0 rem(15px);
+//     }
+//   }
+// }

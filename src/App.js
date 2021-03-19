@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Stories from 'react-insta-stories';
 import Rating from 'react-rating';
+import SimpleSlider from './BannerSlider';
 
 import closeIcon from './icons/close.svg';
 import starIcon from './icons/star.svg';
@@ -9,8 +10,22 @@ import like from './icons/like.svg';
 import feed from './icons/feed.svg';
 
 import './App.scss';
+// import './SliderBanner.scss';
 
 const DURATION = 5000;
+
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
+
+const images = [
+  'https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg',
+  'https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg',
+];
 
 const Content = ({
   description = 'Frango tava ótimo, chegou na hora. Não vejo a hora de pedir mais!',
@@ -160,6 +175,7 @@ const App = () => {
       <h3 className="subtitle">
         A opinião dos outros clientes que pediram na sua região!
       </h3>
+
       <div className="feed">
         <div className="header">
           <div className="profile-infos">
@@ -187,6 +203,85 @@ const App = () => {
           }}
           className="image"
         />
+        <p className="review">
+          Prato perfeito, amei muito, mas a entrega é demorada...
+        </p>
+        <div className="actions">
+          <div className="like-container">
+            <img className="like" src={like} alt="" /> <span>6</span>
+          </div>
+          <button>Ver prato</button>
+        </div>
+      </div>
+
+      <div className="feed">
+        <div className="header">
+          <div className="profile-infos">
+            <img
+              className="header__image"
+              src="https://avatars.githubusercontent.com/u/34448877?s=460&u=512ec647b404aae6d6030f384bf726559f15a8e2&v=4"
+              alt=""
+            />
+            <span>
+              <strong>Daniel</strong> recomenda o restaurante
+              <strong> Habib's</strong>
+              <div>13 de Jun</div>
+            </span>
+          </div>
+        </div>
+        <SimpleSlider />
+        <p className="review">
+          Prato perfeito, amei muito, mas a entrega é demorada...
+        </p>
+        <div className="actions">
+          <div className="like-container">
+            <img className="like" src={like} alt="" /> <span>6</span>
+          </div>
+          <button>Ver prato</button>
+        </div>
+      </div>
+
+      <div className="feed">
+        <div className="header">
+          <div className="profile-infos">
+            <img
+              className="header__image"
+              src="https://avatars.githubusercontent.com/u/34448877?s=460&u=512ec647b404aae6d6030f384bf726559f15a8e2&v=4"
+              alt=""
+            />
+            <span>
+              <strong>Daniel</strong> recomenda o restaurante
+              <strong> Habib's</strong>
+              <div>13 de Jun</div>
+            </span>
+          </div>
+        </div>
+        <div className="image-container">
+          <div
+            style={{
+              backgroundImage:
+                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+            }}
+            className="left"
+          />
+          <div className="rigth">
+            <div
+              style={{
+                backgroundImage:
+                  'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+              }}
+              className="rigth-image"
+            />
+            <div
+              style={{
+                backgroundImage:
+                  'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+              }}
+              className="rigth-image"
+            />
+          </div>
+        </div>
+
         <p className="review">
           Prato perfeito, amei muito, mas a entrega é demorada...
         </p>
