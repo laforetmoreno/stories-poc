@@ -130,6 +130,18 @@
     background-size: cover;
   }
 
+  .carousel {
+    margin-top: 10px;
+    height: 254px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    width: 90%;
+    margin-right: 10px;
+    min-width: 328px;
+  }
+
   .review {
     font-weight: 300;
     font-size: 15px;
@@ -286,4 +298,9 @@
       border-radius: 16px;
     }
   }
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: scroll;
 }

@@ -292,6 +292,81 @@ const App = () => {
           <button>Ver prato</button>
         </div>
       </div>
+
+      <div className="feed">
+        <div className="header">
+          <div className="profile-infos">
+            <img
+              className="header__image"
+              src="https://avatars.githubusercontent.com/u/34448877?s=460&u=512ec647b404aae6d6030f384bf726559f15a8e2&v=4"
+              alt=""
+            />
+            <span>
+              <strong>Daniel</strong> recomenda o restaurante
+              <strong> Habib's</strong>
+              <div>13 de Jun</div>
+            </span>
+          </div>
+        </div>
+        {/* <img
+          className="image"
+          alt=""
+          src="https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg"
+        /> */}
+        <div className="carousel-container">
+          <div
+            style={{
+              backgroundImage:
+                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+            }}
+            className="carousel"
+          />
+          <div
+            style={{
+              backgroundImage:
+                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+            }}
+            className="carousel"
+          />
+          <div
+            style={{
+              backgroundImage:
+                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+            }}
+            className="carousel"
+          />
+          <div
+            style={{
+              backgroundImage:
+                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+            }}
+            className="carousel"
+          />
+          <div
+            style={{
+              backgroundImage:
+                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+            }}
+            className="carousel"
+          />
+          <div
+            style={{
+              backgroundImage:
+                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+            }}
+            className="carousel"
+          />
+        </div>
+        <p className="review">
+          Prato perfeito, amei muito, mas a entrega é demorada...
+        </p>
+        <div className="actions">
+          <div className="like-container">
+            <img className="like" src={like} alt="" /> <span>6</span>
+          </div>
+          <button>Ver prato</button>
+        </div>
+      </div>
     </div>
   );
 };
