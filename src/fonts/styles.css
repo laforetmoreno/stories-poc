@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Sul Sans B';
+  src: url(./SulSans-Bold.woff2) format('woff2'), url(./SulSans-Bold.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Sul Sans L';
+  src: url(./SulSans-Light.woff2) format('woff2'), url(./SulSans-Light.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Sul Sans M';
+  src: url(./SulSans-Medium.woff2) format('woff2'), url(./SulSans-Medium.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'Sul Sans R';
+  src: url(./SulSans-Regular.woff2) format('woff2'), url(./SulSans-Regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal
+}
