@@ -12,13 +12,12 @@
     min-height: 414px;
   }
 
-  button {
+  .goto {
     font-family: 'SulSansLight';
-    background: none;
     border: none;
     cursor: pointer;
     outline: inherit;
-    background: #ea1d2c;
+    background: #ea1d2c !important;
     width: 90%;
     height: 37px;
     border-radius: 7px;
@@ -59,57 +58,193 @@
       }
     }
   }
+}
+
+.profile-infos {
+  width: 89%;
+  display: flex;
+  align-items: center;
+}
+.close {
+  color: white;
+  background: transparent !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 !important;
+  margin-right: 5px !important;
+  z-index: 1000;
+}
+
+.header {
+  display: flex;
+
+  height: 44px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 3px;
+  margin-left: 13px;
+
+  &__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 10px;
+    width: 33px;
+    height: 33px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 2px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+  }
+
+  h1 {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0px 0px 2px;
+    font-weight: 200 !important;
+    font-size: 12px;
+  }
+
+  h2 {
+    color: #dcdcdc;
+    font-size: 10px;
+    line-height: 16px;
+    margin-left: 7px;
+    font-weight: 100 !important;
+  }
+}
+
+.feed {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20px 0 30px 18px;
+  width: calc(100% + 20px);
+  margin-left: -20px;
+
+  .image {
+    width: calc(100% + 20px);
+    margin-left: -20px;
+    margin-top: 10px;
+    height: 254px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .review {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #a6a29f;
+    max-width: 317px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: inherit;
+      color: #ea1d2c;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .like-container {
+      display: flex;
+      align-items: center;
+      .like {
+        width: 15px;
+      }
+
+      span {
+        margin-left: 5px;
+        font-weight: 1;
+        font-size: 12px;
+        line-height: 15px;
+        color: #717171;
+      }
+    }
+  }
+}
+
+.wrapper {
+  padding: 20px;
 
   .profile-infos {
-    width: 89%;
-    display: flex;
-    align-items: center;
-  }
-  .close {
-    color: white;
-    background: transparent;
-    width: 16px !important;
-    height: 16px !important;
     margin: 0 !important;
-    margin-right: 5px !important;
-    z-index: 1000;
   }
 
   .header {
-    display: flex;
+    margin: 0 !important;
 
-    height: 44px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 3px;
-    margin-left: 13px;
-
-    &__image {
-      width: 40px;
-      height: 40px;
-      border-radius: 40px;
-      margin-right: 10px;
-      width: 33px;
-      height: 33px;
-      filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 2px);
-      border: 2px solid rgba(255, 255, 255, 0.8);
-    }
-
-    h1 {
-      font-size: 1rem;
-      color: #ffffff;
-      margin: 0px 0px 2px;
-      font-weight: 200 !important;
+    span {
+      font-style: normal;
+      font-weight: 100;
       font-size: 12px;
+      line-height: 15px;
+      color: #1a1a1a;
     }
 
-    h2 {
-      color: #dcdcdc;
+    div {
+      font-style: normal;
+      font-weight: 300;
       font-size: 10px;
-      line-height: 16px;
-      margin-left: 7px;
-      font-weight: 100 !important;
+      line-height: 12px;
+      color: #717171;
+      margin-top: 4px;
+    }
+
+    img {
+      border: none;
     }
   }
+}
+
+.title,
+.subtitle {
+  max-width: 230px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  color: #292929;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1a1a1a;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+  }
+}
+
+.story {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
