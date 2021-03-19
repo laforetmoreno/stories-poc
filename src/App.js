@@ -135,9 +135,9 @@ const App = () => {
     });
   };
 
-  setTimeout(() => {
-    setShowStories(false);
-  }, 22000);
+  // setTimeout(() => {
+  //   setShowStories(false);
+  // }, 22000);
 
   return (
     <>
