@@ -14,19 +14,6 @@ import './App.scss';
 
 const DURATION = 5000;
 
-const settings = {
-  dots: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-};
-
-const images = [
-  'https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg',
-  'https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg',
-];
-
 const Content = ({
   description = 'Frango tava ótimo, chegou na hora. Não vejo a hora de pedir mais!',
   onClose,
@@ -191,11 +178,6 @@ const App = () => {
             </span>
           </div>
         </div>
-        {/* <img
-          className="image"
-          alt=""
-          src="https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg"
-        /> */}
         <div
           style={{
             backgroundImage:
