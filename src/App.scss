@@ -124,7 +124,7 @@
     width: calc(100% + 20px);
     margin-left: -20px;
     margin-top: 10px;
-    height: 254px;
+    height: 400px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -303,4 +303,9 @@
 .carousel-container {
   display: flex;
   overflow-x: scroll;
+}
+
+.image-teste {
+  max-height: 400px;
+  min-height: 400px;
 }

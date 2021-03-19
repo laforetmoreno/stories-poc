@@ -9,6 +9,10 @@ import starIcon from './icons/star.svg';
 import like from './icons/like.svg';
 import feed from './icons/feed.svg';
 
+import image from './images/image.png';
+import image1 from './images/image1.png';
+import image2 from './images/image2.png';
+
 import './App.scss';
 // import './SliderBanner.scss';
 
@@ -76,8 +80,7 @@ const App = () => {
     const array = [
       {
         id: 1,
-        image:
-          'https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202006181450_BgN3_1.jpg',
+        image: image1,
         avatar:
           'https://avatars.githubusercontent.com/u/34448877?s=460&u=512ec647b404aae6d6030f384bf726559f15a8e2&v=4',
         name: 'Moreno Andrade',
@@ -88,8 +91,7 @@ const App = () => {
       },
       {
         id: 2,
-        image:
-          'https://static-images.ifood.com.br/image/upload/t_high/pratos/c2ffd904-61e2-4f72-8456-f4d2dcdf699b/201807281357_44209999.jpg',
+        image: image,
         avatar:
           'https://avatars.githubusercontent.com/u/34448877?s=460&u=512ec647b404aae6d6030f384bf726559f15a8e2&v=4',
         name: 'Moreno Andrade',
@@ -99,8 +101,7 @@ const App = () => {
       },
       {
         id: 3,
-        image:
-          'https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg',
+        image: image2,
         avatar:
           'https://avatars.githubusercontent.com/u/34448877?s=460&u=512ec647b404aae6d6030f384bf726559f15a8e2&v=4',
         name: 'Moreno Andrade',
@@ -178,13 +179,7 @@ const App = () => {
             </span>
           </div>
         </div>
-        <div
-          style={{
-            backgroundImage:
-              'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
-          }}
-          className="image"
-        />
+        <div style={{ backgroundImage: `url(${image})` }} className="image" />
         <p className="review">
           Prato perfeito, amei muito, mas a entrega é demorada...
         </p>
@@ -241,23 +236,20 @@ const App = () => {
         <div className="image-container">
           <div
             style={{
-              backgroundImage:
-                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+              backgroundImage: `url(${image})`,
             }}
             className="left"
           />
           <div className="rigth">
             <div
               style={{
-                backgroundImage:
-                  'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+                backgroundImage: `url(${image1})`,
               }}
               className="rigth-image"
             />
             <div
               style={{
-                backgroundImage:
-                  'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+                backgroundImage: `url(${image2})`,
               }}
               className="rigth-image"
             />
@@ -290,30 +282,22 @@ const App = () => {
             </span>
           </div>
         </div>
-        {/* <img
-          className="image"
-          alt=""
-          src="https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg"
-        /> */}
         <div className="carousel-container">
           <div
             style={{
-              backgroundImage:
-                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+              backgroundImage: `url(${image})`,
             }}
             className="carousel"
           />
           <div
             style={{
-              backgroundImage:
-                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+              backgroundImage: `url(${image1})`,
             }}
             className="carousel"
           />
           <div
             style={{
-              backgroundImage:
-                'url(https://static-images.ifood.com.br/image/upload/t_high/pratos/cbcf001a-26fb-4e0f-8024-6dce16c569d6/202009301842_Mbgc_c.jpg)',
+              backgroundImage: `url(${image2})`,
             }}
             className="carousel"
           />
